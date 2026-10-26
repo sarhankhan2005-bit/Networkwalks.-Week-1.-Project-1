@@ -18,13 +18,13 @@ Week 1 lab setup for the NetworkWalks Cybersecurity Internship. The lab uses Kal
 | Shared folder | Windows Downloads, mounted at `/mnt/hgfs` |
 | Baseline | Clean snapshot taken |
 
-The screenshots and troubleshooting notes are being added to this repository. See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for issues encountered and commands used.
+See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for reported DNS/connectivity issues, shared-folder behavior, and the snapshot disk-space error.
 
 ## Setup notes
 
 1. **Configure VMware networking.** Set VMnet8 to NAT on `10.0.0.0/24`, with gateway `10.0.0.254`. The host's VMnet8 adapter appears as `10.0.0.1` on Windows.
 2. **Set up Kali networking.** Kali uses static address `10.0.0.2/24`, with gateway and DNS `10.0.0.254` and secondary DNS `8.8.8.8`.
-3. **Check connectivity.** The terminal screenshot shows this command and successful replies:
+3. **Check connectivity.** The terminal screenshot shows these commands and successful ping replies:
 
    ```bash
    ip a | grep "inet 10"
@@ -36,8 +36,8 @@ The screenshots and troubleshooting notes are being added to this repository. Se
 
 ## Screenshot evidence
 
-Screenshots will be added to `screenshots/` and embedded here once the image files are available in the repository. The intended evidence is the VMware network editor, Windows `ipconfig`, Kali terminal, VM settings, and snapshot manager.
+Screenshot evidence is pending addition to the repository. The planned images are the VMware network editor, Windows `ipconfig`, Kali terminal, VM settings, and snapshot manager. Images will be embedded here after they are uploaded to `screenshots/`.
 
 ## Troubleshooting
 
-See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for the problems encountered and troubleshooting commands.
+See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for the problems reported and commands visible in the terminal screenshot.
